@@ -26,30 +26,28 @@ A simple **command-line restaurant management system** in Python that allows you
 
 ---
 
-## Installation
-
-1. Clone this repository or download the code:
+## Requirements
+- Python 3.x
+- Core development and test dependencies are installed via `requirements.txt`
 ```bash
-git clone <your-repo-url>
-Make sure you have Python 3 installed.
+ pip install -r requirements.txt
+```
+- No external libraries are required to run the main script; tests use `pytest` (already included in `requirements.txt`).
 
-Navigate to the project directory:
-
-bash
-Copy code
-cd restaurant-system
-Run the program:
-
-bash
-Copy code
+## Usage
+1. (Recommended) Install dependencies from `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+2. Save the main script as `main.py`.
+3. Run the script from your terminal:
+```bash
 python main.py
-Usage
-Run the program with python main.py.
+```
 
-The menu options will be displayed:
+4. The menu options will be displayed:
 
-mathematica
-Copy code
+```python
 ==== Restaurant ====
 1) View Menu
 2) Add Item To Menu
@@ -60,24 +58,21 @@ Copy code
 7) Remove Item From Order
 8) Exit
 ====================
+```
 Enter the number corresponding to the action you want to perform.
 
-Follow the prompts to add items, edit prices, or manage orders.
 
-Example Workflow
-Add menu items like "Pizza" or "Burger".
+## Running Tests
 
-Place an order by specifying item and quantity.
+This project includes test suite using `pytest` to verify script's functionality.
+1. Install dependencies (includes pytest):
+```bash
+pip install -r requirements.txt
+```
+2. Save the code as `test_main.py`.
+3. Run the tests from the terminal:
+```bash
+pytest
+```
+You should see output indicating that the tests have passed.
 
-View the current order with total price.
-
-Remove items from the order or update quantities.
-
-Exit the system when done.
-
-Project Structure
-css
-Copy code
-main.py          # Main program with Menu & Order classes
-menu.json        # JSON file storing the menu data
-README.md        # Project documentation
